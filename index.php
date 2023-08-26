@@ -3,10 +3,6 @@
     session_start();
     $error = "";
 
-    //db server: sdb-u.hosting.stackcp.net
-    //db name: secretdiary-32313145fa
-    //db password: yvcii4u6ve
-
     if(array_key_exists("logout", $_GET)) {
         session_unset();
         setcookie("id", "", time() - 60 * 60);
